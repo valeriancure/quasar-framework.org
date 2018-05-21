@@ -28,7 +28,7 @@ framework: {
 | `headers` | Object | Specify what headers need to be added to the XHR request |
 | `url-factory` | Function | Function (with `file` object received as parameter) which returns a Promise that resolves to a URL. |
 | `method` | String | HTTP method to use (POST/PUT). Defaults to POST. |
-| `extensions` | String | Extensions to allow for uploading. Example: `'.gif,.jpg,.jpeg,.png'` |
+| `extensions` | String/Array | Extensions to allow for uploading. Example: `'.gif,.jpg,.jpeg,.png'` or `['.gif', '.jpg', '.jpeg', '.png']` |
 | `multiple` | Boolean | Allow multiple file uploads |
 | `hide-upload-button` | Boolean | Hides the Upload button. You can then trigger it manually by calling `upload()` on the Vue ref |
 | `hide-upload-progress` | Boolean | Hides the upload progress. Useful when you want some other means of signaling upload progress to the user. |
